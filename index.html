@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Declara el tipo de documento como HTML5 y define el idioma como español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Asegura la compatibilidad con el modo de renderizado más reciente de IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura el viewport para un diseño responsive en dispositivos móviles -->
+    <link rel="icon" type="image/x-icon" href="./imagenes/favicon.ico">
+    <!-- Vincula un favicon que aparecerá en la pestaña del navegador -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!-- Vincula el archivo CSS externo para los estilos de la página -->
+    <title>Encriptador de Texto</title>
+    <!-- Define el título de la página que se muestra en la pestaña del navegador -->
+</head>
+<body>
+    <!-- Inicia la sección del cuerpo del documento donde se coloca el contenido visible -->
+    <!-- Encabezado de la página -->
+    <header>
+        <a href="#" rel="#">
+            <!-- Crea un enlace (sin destino en este caso) -->
+            <img src="./imagenes/logo.svg" alt="Logo Alura" class="logo">
+            <!-- Inserta una imagen que sirve como logo, con un texto alternativo y una clase CSS -->
+        </a>
+    </header>
+    <!-- Principal -->
+    <main>
+        <!-- Contenido principal de la página -->
+        <section class="encriptador">
+            <!-- Sección dedicada al encriptador de texto -->
+            <textarea class="encriptar" placeholder="Ingrese el texto aquí"></textarea>
+            <!-- Área de texto donde el usuario puede ingresar el texto a encriptar -->
+            <div class="encriptador-aviso">
+                <!-- Contenedor para un aviso relacionado con la encriptación -->
+                <img src="./imagenes/aviso.svg" alt="Imagen Aviso" class="img-aviso">
+                <!-- Imagen decorativa para el aviso -->
+                <p class="texto-aviso">Solo letras minúsculas y sin acentos</p>
+                <!-- Texto del aviso que indica las restricciones de entrada -->
+            </div>
+            <div class="encriptador-contenedor">
+                <!-- Contenedor para los botones de encriptar y desencriptar -->
+                <button type="submit" class="btn-encriptar">ENCRIPTAR</button>
+                <!-- Botón que al presionarse encripta el texto ingresado -->
+                <button type="submit" class="btn-desencriptar">DESENCRIPTAR</button>
+                <!-- Botón que al presionarse desencripta el texto ingresado -->
+            </div>
+        </section>
+        <section class="tarjeta">
+            <!-- Sección para mostrar el resultado de la encriptación/desencriptación -->
+            <div class="tarjeta-contenedor">
+                <!-- Contenedor que agrupa la imagen y el texto dentro de la tarjeta -->
+                <img src="./imagenes/muñeco.svg" alt="Imagen Muñeco" class="img-muñeco">
+                <!-- Imagen decorativa dentro de la tarjeta -->
+                <p class="texto-uno">Ningún mensaje fue encontrado</p>
+                <!-- Mensaje que se muestra si no se encuentra texto para encriptar/desencriptar -->
+                <p class="texto-dos">Ingrese el texto que deseas encriptar o desencriptar</p>
+                <!-- Texto de instrucción para el usuario -->
+            </div>
+            <textarea class="evaluar" readonly></textarea>
+            <!-- Área de texto para mostrar el resultado, solo lectura -->
+            <button type="submit" class="btn-copiar">Copiar</button> 
+            <!-- Botón para copiar el texto del resultado -->
+        </section>
+    </main>
+    <!-- Pie de página -->
+    <footer>
+        <!-- Sección del pie de página -->
+        <p class="copyright">&copy; Copyright 2024 - Encriptador de Texto - desarrollado por Calicia1998</p>
+        <!-- Texto de derechos de autor -->
+        <a href="#" rel="">
+            <img src="./imagenes/linkedin.svg" alt="Logo LinkedIn" class="linked">
+            <!-- Enlace a LinkedIn con un ícono -->
+        </a>
+        <a href="#" rel="">
+            <img src="./imagenes/github.svg" alt="Logo GitHub" class="git">
+            <!-- Enlace a GitHub con un ícono -->
+        </a>
+    </footer>
+    <script src="./js/encriptador.js"></script>
+    <!-- Vincula el archivo JavaScript externo que contiene la lógica de encriptación -->
+</body>
+</html>
